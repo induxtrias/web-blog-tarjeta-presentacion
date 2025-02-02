@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas de Blog 3D</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      font-family: Arial, sans-serif;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 250px;
+      height: 350px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-front {
+      background: #fff;
+      color: #333;
+    }
+
+    .card-back {
+      background: #2575fc;
+      color: #fff;
+      transform: rotateY(180deg);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .card-back a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-top: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .card-back a:hover {
+      background: #fff;
+      color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 1</h2>
+        <p>Título del primer blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del primer blog. ¡Haz clic para leer más!</p>
+        <a href="#blog1">Leer más</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 2</h2>
+        <p>Título del segundo blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del segundo blog. ¡Haz clic para leer más!</p>
+        <a href="#blog2">Leer más</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 3</h2>
+        <p>Título del tercer blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del tercer blog. ¡Haz clic para leer más!</p>
+        <a href="#blog3">Leer más</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 4</h2>
+        <p>Título del cuarto blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del cuarto blog. ¡Haz clic para leer más!</p>
+        <a href="#blog4">Leer más</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 5</h2>
+        <p>Título del quinto blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del quinto blog. ¡Haz clic para leer más!</p>
+        <a href="#blog5">Leer más</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="card">
+      <div class="card-front">
+        <h2>Blog 6</h2>
+        <p>Título del sexto blog</p>
+      </div>
+      <div class="card-back">
+        <h2>Descripción</h2>
+        <p>Una breve descripción del sexto blog. ¡Haz clic para leer más!</p>
+        <a href="#blog6">Leer más</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
